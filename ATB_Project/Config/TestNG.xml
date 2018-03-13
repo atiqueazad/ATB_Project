@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="SmokeTest" verbose="1" >
+  <test name="Sprint1" >
+    <classes>
+       <class name="testngrunner.TestNGRunner" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [SmokeTest]">
+  <test name="Sprint1(failed)">
+    <classes>
+      <class name="testngrunner.TestNGRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testngrunner.TestNGRunner -->
+    </classes>
+  </test> <!-- Sprint1(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->
