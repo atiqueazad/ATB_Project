@@ -9,33 +9,38 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PageObjectModel {
 	WebDriver driver;
-	
 	public PageObjectModel(WebDriver driver) {
 	this.driver = driver;
 	PageFactory.initElements(driver,this);
 	}
-	
 	@FindBy(how = How.XPATH, using = ".//*[@id='name']")
 	@CacheLookup
 	public WebElement EnterName;
 	public WebElement getEnterName() {
 	return EnterName;
 	}
-	
-
 	@FindBy(how = How.XPATH, using = ".//*[@id='email']")
 	@CacheLookup
 	public WebElement EnterEmail;
 	public WebElement getEnterEmail() {
 	return EnterEmail;
 	}
-	
-	
 	@FindBy(how = How.XPATH, using = ".//*[@id='mobile']")
 	@CacheLookup
 	public WebElement EnterPhoneNumber;
     public WebElement getEnterPhoneNumber() {
 	return EnterPhoneNumber;
-	}}
+	}
+    @FindBy(how = How.XPATH, using = ".//*[@id='message']")
+	@CacheLookup
+	public WebElement EnterMassage;
+    public WebElement getEnterEnterMassage() {
+	return EnterMassage;
+    }
+	@FindBy(how = How.XPATH, using = ".//*[@id='submit']")
+	@CacheLookup
+	public WebElement ClickSubmit;
+    public WebElement getSubmit() {
+	return ClickSubmit;}}
 
 
