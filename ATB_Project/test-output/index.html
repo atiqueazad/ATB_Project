@@ -144,8 +144,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SmokeTest&quot;&gt;
-  &lt;test name=&quot;Sprint1&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SmokeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Sprint1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testngrunner.TestNGRunner&quot;/&gt;
     &lt;/classes&gt;
@@ -199,12 +199,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'testngrunner.TestNGRunner')
-data.setCell(0, 3, 6316);
+data.setCell(0, 3, 7363);
 window.suiteTableData['SmokeTest']= { tableData: data, tableDiv: 'times-div-SmokeTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-SmokeTest">
               </div> <!-- times-div-SmokeTest -->
             </div> <!-- times-div -->
@@ -237,11 +237,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Email will be delivered to the AgileTrailblazers management team)</span>
-                <span class="method-start">324 ms</span>
+                <span class="method-start">301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">6643 ms</span>
+                <span class="method-start">7664 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

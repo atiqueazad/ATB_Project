@@ -1,10 +1,8 @@
 package stefdefination;
 
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,8 +15,7 @@ public class StepDef {
 	public void user_visit_homepage() throws Throwable {
 	System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
 	driver = new ChromeDriver();
-	
-    driver.get("http://mock.agiletrailblazers.com/contact.html");
+	driver.get("http://mock.agiletrailblazers.com/contact.html");
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -39,8 +36,8 @@ public class StepDef {
 	}
     @When("^User Select subject$")
 	public void user_Select_subject() throws Throwable {
-	Select select = new Select(driver.findElement(By.id("subject")));
-	select.selectByVisibleText("Agile");
+    PageObjectModel obj = new PageObjectModel(driver);	
+    obj.selectSubject();
     }
     @When("^User Enter message$")
 	public void user_Enter_message() throws Throwable {
