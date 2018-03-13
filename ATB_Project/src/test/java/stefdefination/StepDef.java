@@ -3,6 +3,7 @@ package stefdefination;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,8 +14,10 @@ public class StepDef {
 	WebDriver driver;
 	@Given("^User visit homepage$")
 	public void user_visit_homepage() throws Throwable {
-	System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
-	driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
+	//System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
+	//driver = new ChromeDriver();
+	
 	driver.get("http://mock.agiletrailblazers.com/contact.html");
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
